@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table border="3px">
+    <tr><th>topic_name</th>
+    <th>name</th>
+    <th>Url</th>
+<th>email</th></tr>
+    {% for j in web %}
+    <tr><td>{{ j.topic_name }}</td>
+        <td>{{ j.name }}</td>
+        <td>{{ j.Url }}</td>
+        <td>{{ j.email }}</td>
+    </tr>
+    {% endfor %}
+   </table> 
+</body>
+</html>
